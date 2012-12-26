@@ -1,0 +1,6 @@
+.ui-header .ui-title,
+.ui-footer .ui-title,
+.ui-btn-inner *
+{
+   white-space: normal !important;
+}

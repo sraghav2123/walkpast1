@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Walkpast mobile app</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.css" />
+<link rel="stylesheet" href="openlayers/theme/default/style.mobile.css" type="text/css">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.min.js"></script>
+// <script>
+//  $(document).on(
+//   'mobileinit',
+//   function()
+//   {
+//     // Default pages' transition effect
+//     $.mobile.defaultPageTransition = 'slide';
+//     // Page Loader Widget
+//     $.mobile.loader.prototype.options.textVisible = true;
+//     // Theme
+//   }
+// );
+// </script>
+<script type="text/javascript" src="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.js"></script>
+<script type='text/javascript' src='js/OpenLayers.mobile.js'></script>
+
+
+</head>
+<body>
+<div data-role="page" id="home">
+ <div data-role="header" data-position="fixed">
+  <h1>Walkpast</h1>
+ </div>
+ <div id="content" data-role="content">
+  <p>
+  	Walkpast helps you find all shop outlets near you  	
+  </p>
+  <p font-size="60%" >
+  	This service is only available in Delhi for now
+  </p>
+  <a href="#searchpage" data-role="button">Search markets</a>
+ </div>
+ <div data-role="footer" data-position="fixed">
+  <h4>Footer</h4>
+ </div>
+</div>
+
+<div data-role="page" id="searchpage">
+	     <div data-role="header">
+            <h1>Search</h1>
+          </div>
+          <div data-role="fieldcontain">
+            <input type="search" name="query" id="query"
+                   value="" placeholder="Search for places"
+                   autocomplete="on"/>
+          </div>
+          <ul data-role="listview" data-inset="true" id="search_results"></ul>
+
+</div>
+ <div data-role="page" id="mappage">
+          <div data-role="content">
+            <div id="map"></div>
+          </div>
+
+          <div data-role="footer" data-position="fixed">
+            <a href="#searchpage" data-icon="search" data-role="button">Search</a>
+            <a href="#" id="locate" data-icon="locate" data-role="button">Locate</a>
+            <a href="#layerspage" data-icon="layers" data-role="button">Layers</a>
+          </div>
+          <div id="navigation" data-role="controlgroup" data-type="vertical">
+            <a href="#" data-role="button" data-icon="plus" id="plus"
+               data-iconpos="notext"></a>
+            <a href="#" data-role="button" data-icon="minus" id="minus"
+               data-iconpos="notext"></a>
+          </div>
+        </div>
+</div>
+
+</body>
+</html>
