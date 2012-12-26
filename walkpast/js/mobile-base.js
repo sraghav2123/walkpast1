@@ -2,11 +2,11 @@
 // http://bingmapsportal.com/ and use that instead.
 var apiKey = "AqTGBsziZHIJYYxgivLBf0hVdrAk9mWO5cQcb8Yux8sW5M8c8opEC2lZqKR1ZZXf";
 
+var init = function (onSelectFeatureFunction) {
 // initialize map when page ready
 var map;
 var gg = new OpenLayers.Projection("EPSG:4326");
 var sm = new OpenLayers.Projection("EPSG:900913");
-var init = function (onSelectFeatureFunction) {
 	map = new OpenLayers.Map({
         div: "map",
         theme: null,
@@ -30,7 +30,6 @@ var init = function (onSelectFeatureFunction) {
         ],
         center: new OpenLayers.LonLat(0, 0),
         zoom: 1
-    }
     });
 }
 // Create the Virtual Earth layer
