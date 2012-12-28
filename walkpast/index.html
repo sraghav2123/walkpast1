@@ -41,7 +41,8 @@
   <p font-size="60%" >
   	This service is only available in Delhi for now
   </p>
-  <a href="#mappage" data-role="button">Search markets</a>
+  <a href="#mappage" data-role="button">Browse map</a>
+  <a href="#searchpage" data-role="button">Search</a>
  </div>
  <div data-role="footer" data-position="fixed">
   <h4>Footer</h4>
@@ -49,18 +50,18 @@
 </div>
 
 <div data-role="page" id="searchpage">
-	     <div data-role="header">
+          <div data-role="header">
             <h1>Search</h1>
           </div>
           <div data-role="fieldcontain">
             <input type="search" name="query" id="query"
                    value="" placeholder="Search for places"
-                   autocomplete="on"/>
+                   autocomplete="off"/>
           </div>
-          <ul data-role="listview" data-inset="true" id="search_results"></ul>
-
+          <ul data-role="listview" data-inset="true" id="search_results"></ul> 
 </div>
- <div data-role="page" id="mappage">
+
+<div data-role="page" id="mappage">
           <div data-role="content">
             <div id="map" ></div>
           </div>
